@@ -1,0 +1,230 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://sources/images/tech/white.png" type="Texture" id=1]
+[ext_resource path="res://scripts/menu/MenuEndCredits.cs" type="Script" id=2]
+[ext_resource path="res://sources/images/logo/menulogo.png" type="Texture" id=3]
+[ext_resource path="res://scripts/menu/LabelLocalized.cs" type="Script" id=4]
+[ext_resource path="res://resources/dynfonts/f77_s28.dfnt.tres" type="DynamicFont" id=5]
+[ext_resource path="res://resources/dynfonts/f77_s14.dfnt.tres" type="DynamicFont" id=6]
+[ext_resource path="res://prefabs/unique/advancement.tscn" type="PackedScene" id=7]
+[ext_resource path="res://prefabs/functional/func_play_music.tscn" type="PackedScene" id=8]
+
+[node name="MenuEndCredits" type="Node2D"]
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CanvasMenu" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ControlMenu" type="Control" parent="CanvasMenu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TextureBackground" type="TextureRect" parent="CanvasMenu/ControlMenu"]
+modulate = Color( 0.552941, 0.411765, 0.478431, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CanvasCredits" type="CanvasLayer" parent="."]
+
+[node name="ControlCredits" type="Control" parent="CanvasCredits"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Control" type="Control" parent="CanvasCredits/ControlCredits"]
+anchor_top = 1.1
+anchor_right = 1.0
+anchor_bottom = 2.9
+
+[node name="Advancement" parent="CanvasCredits/ControlCredits/Control" instance=ExtResource( 7 )]
+anchor_bottom = 0.16
+
+[node name="Advancement2" parent="CanvasCredits/ControlCredits/Control" instance=ExtResource( 7 )]
+anchor_top = 0.16
+anchor_bottom = 0.32
+Current = 1
+
+[node name="Advancement3" parent="CanvasCredits/ControlCredits/Control" instance=ExtResource( 7 )]
+anchor_top = 0.32
+anchor_bottom = 0.48
+Current = 2
+
+[node name="Advancement4" parent="CanvasCredits/ControlCredits/Control" instance=ExtResource( 7 )]
+anchor_top = 0.48
+anchor_bottom = 0.64
+Current = 3
+
+[node name="Advancement5" parent="CanvasCredits/ControlCredits/Control" instance=ExtResource( 7 )]
+anchor_top = 0.64
+anchor_bottom = 0.8
+Current = 4
+
+[node name="Advancement6" parent="CanvasCredits/ControlCredits/Control" instance=ExtResource( 7 )]
+anchor_top = 0.8
+anchor_bottom = 0.96
+Current = 5
+
+[node name="TextureRect" type="TextureRect" parent="CanvasCredits/ControlCredits"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 3 )
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasCredits/ControlCredits"]
+anchor_top = 1.2
+anchor_right = 1.0
+anchor_bottom = 1.4
+margin_top = 440.0
+margin_bottom = 440.0
+custom_colors/font_color = Color( 1, 0.92549, 0.839216, 1 )
+custom_fonts/font = ExtResource( 5 )
+text = "Developers"
+align = 1
+valign = 1
+script = ExtResource( 4 )
+locale = "TI_DEVELOPERS"
+
+[node name="Label9" type="Label" parent="CanvasCredits/ControlCredits"]
+anchor_top = 1.2
+anchor_right = 1.0
+anchor_bottom = 1.4
+margin_top = 744.0
+margin_bottom = 744.0
+custom_colors/font_color = Color( 1, 0.92549, 0.839216, 1 )
+custom_fonts/font = ExtResource( 5 )
+text = "Special Thanks"
+align = 1
+valign = 1
+script = ExtResource( 4 )
+locale = "TI_SPECTHANKS"
+
+[node name="Label5" type="Label" parent="CanvasCredits/ControlCredits"]
+anchor_top = 1.2
+anchor_right = 1.0
+anchor_bottom = 1.4
+margin_top = -72.0
+margin_bottom = -72.0
+custom_colors/font_color = Color( 1, 0.92549, 0.839216, 1 )
+custom_fonts/font = ExtResource( 5 )
+text = "ADVANCEMENTS"
+align = 1
+valign = 1
+script = ExtResource( 4 )
+locale = "TI_ADVANCEMENTS"
+
+[node name="Label2" type="Label" parent="CanvasCredits/ControlCredits"]
+anchor_left = 0.05
+anchor_top = 1.5
+anchor_right = 0.95
+anchor_bottom = 1.6
+margin_top = 440.0
+margin_bottom = 440.0
+custom_colors/font_color = Color( 1, 0.92549, 0.839216, 1 )
+custom_fonts/font = ExtResource( 6 )
+text = "Idea: Denis Lutsenko"
+valign = 1
+script = ExtResource( 4 )
+locale = "TI_IDEA"
+
+[node name="Label3" type="Label" parent="CanvasCredits/ControlCredits"]
+anchor_left = 0.05
+anchor_top = 1.65
+anchor_right = 0.95
+anchor_bottom = 1.75
+margin_top = 440.0
+margin_bottom = 440.0
+custom_colors/font_color = Color( 1, 0.92549, 0.839216, 1 )
+custom_fonts/font = ExtResource( 6 )
+text = "Code: TripleFilterDev"
+align = 2
+valign = 1
+script = ExtResource( 4 )
+locale = "TI_CODE"
+
+[node name="Label4" type="Label" parent="CanvasCredits/ControlCredits"]
+anchor_left = 0.05
+anchor_top = 1.8
+anchor_right = 0.95
+anchor_bottom = 1.9
+margin_top = 440.0
+margin_bottom = 440.0
+custom_colors/font_color = Color( 1, 0.92549, 0.839216, 1 )
+custom_fonts/font = ExtResource( 6 )
+text = "Artwork: Denis Lutsenko"
+valign = 1
+script = ExtResource( 4 )
+locale = "TI_ARTWORK"
+
+[node name="Label6" type="Label" parent="CanvasCredits/ControlCredits"]
+anchor_left = 0.05
+anchor_top = 1.95
+anchor_right = 0.95
+anchor_bottom = 2.05
+margin_top = 440.0
+margin_bottom = 440.0
+custom_colors/font_color = Color( 1, 0.92549, 0.839216, 1 )
+custom_fonts/font = ExtResource( 6 )
+text = "Music: TripleFilterDev"
+align = 2
+valign = 1
+script = ExtResource( 4 )
+locale = "TI_MUSIC"
+
+[node name="Label7" type="Label" parent="CanvasCredits/ControlCredits"]
+anchor_left = 0.05
+anchor_top = 2.1
+anchor_right = 0.95
+anchor_bottom = 2.2
+margin_top = 440.0
+margin_bottom = 440.0
+custom_colors/font_color = Color( 1, 0.92549, 0.839216, 1 )
+custom_fonts/font = ExtResource( 6 )
+text = "Game Design: Denis Lutsenko"
+valign = 1
+script = ExtResource( 4 )
+locale = "TI_GAMEDESIGN"
+
+[node name="Label8" type="Label" parent="CanvasCredits/ControlCredits"]
+anchor_left = 0.05
+anchor_top = 2.25
+anchor_right = 0.95
+anchor_bottom = 2.35
+margin_top = 440.0
+margin_bottom = 440.0
+custom_colors/font_color = Color( 1, 0.92549, 0.839216, 1 )
+custom_fonts/font = ExtResource( 6 )
+text = "Narration: TripleFilterDev"
+align = 2
+valign = 1
+script = ExtResource( 4 )
+locale = "TI_NARRATION"
+
+[node name="Label10" type="Label" parent="CanvasCredits/ControlCredits"]
+anchor_left = 0.05
+anchor_top = 2.25
+anchor_right = 0.95
+anchor_bottom = 2.35
+margin_top = 556.0
+margin_bottom = 1036.0
+custom_colors/font_color = Color( 1, 0.92549, 0.839216, 1 )
+custom_fonts/font = ExtResource( 6 )
+text = "Tester: Bleasdale"
+autowrap = true
+clip_text = true
+script = ExtResource( 4 )
+locale = "TI_SPECTHANKSDESC"
+
+[node name="FuncPlayMusic" parent="." instance=ExtResource( 8 )]
+track = 1
+
+[node name="TimerEnd" type="Timer" parent="."]

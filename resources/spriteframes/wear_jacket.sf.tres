@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" load_steps=8 format=2]
+
+[ext_resource path="res://sources/images/character/wear/jacket/character_run0.png" type="Texture" id=1]
+[ext_resource path="res://sources/images/character/wear/jacket/character_carry1.png" type="Texture" id=2]
+[ext_resource path="res://sources/images/character/wear/jacket/character_carry0.png" type="Texture" id=3]
+[ext_resource path="res://sources/images/character/wear/jacket/character_carry_stay0.png" type="Texture" id=4]
+[ext_resource path="res://sources/images/character/wear/jacket/character_run1.png" type="Texture" id=5]
+[ext_resource path="res://sources/images/character/wear/jacket/character_stay0.png" type="Texture" id=8]
+[ext_resource path="res://sources/images/character/wear/jacket/character_stay1.png" type="Texture" id=9]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "carry_run",
+"speed": 2.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "carry_stay",
+"speed": 1.4
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "default",
+"speed": 1.4
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "run",
+"speed": 3.0
+} ]

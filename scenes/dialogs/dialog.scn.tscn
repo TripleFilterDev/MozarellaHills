@@ -1,0 +1,64 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://resources/tilesets/test.ts.tres" type="TileSet" id=1]
+[ext_resource path="res://sources/images/test/people0.png" type="Texture" id=2]
+[ext_resource path="res://sources/images/test/people1.png" type="Texture" id=3]
+[ext_resource path="res://scripts/dialogs/DialogTest.cs" type="Script" id=4]
+[ext_resource path="res://resources/dynfonts/f77_s10.dfnt.tres" type="DynamicFont" id=5]
+
+[node name="Dialog" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Decorative" type="Node2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="Decorative"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 65530, 0, 0, 65531, 1, 0, 65532, 1, 0, 65533, 0, 0, 65534, 0, 0, 65535, 1, 0, 0, 1, 0, 1, 1, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 131066, 0, 0, 131067, 0, 0, 131068, 0, 0, 131069, 0, 0, 131070, 0, 0, 131071, 0, 0, 65536, 1, 0, 65537, 1, 0, 65538, 1, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 196602, 0, 0, 196603, 0, 0, 196604, 0, 0, 196605, 0, 0, 196606, 0, 0, 196607, 0, 0, 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 0 )
+
+[node name="People0" type="Sprite" parent="Decorative"]
+position = Vector2( 32, -16 )
+texture = ExtResource( 2 )
+
+[node name="People1" type="Sprite" parent="Decorative"]
+position = Vector2( -31, -17 )
+texture = ExtResource( 3 )
+
+[node name="CameraDialog" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.5, 0.5 )
+smoothing_enabled = true
+smoothing_speed = 9.0
+
+[node name="CanvasDialog" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="ControlDialog" type="Control" parent="CanvasDialog"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RectSpeech" type="ColorRect" parent="CanvasDialog/ControlDialog"]
+anchor_left = 0.2
+anchor_top = 0.75
+anchor_right = 0.8
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.427451 )
+
+[node name="LabelParticipant" type="Label" parent="CanvasDialog/ControlDialog/RectSpeech"]
+anchor_left = 0.05
+anchor_top = 0.05
+anchor_right = 0.95
+anchor_bottom = 0.27
+custom_fonts/font = ExtResource( 5 )
+
+[node name="RichSpeech" type="RichTextLabel" parent="CanvasDialog/ControlDialog/RectSpeech"]
+anchor_left = 0.05
+anchor_top = 0.25
+anchor_right = 0.95
+anchor_bottom = 0.95
+custom_fonts/normal_font = ExtResource( 5 )
+bbcode_enabled = true

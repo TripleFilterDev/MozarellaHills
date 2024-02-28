@@ -1,0 +1,15 @@
+[gd_resource type="Shader" format=2]
+
+[resource]
+code = "shader_type canvas_item;
+
+uniform float offset_hor = 0.0;
+uniform float offset_ver = 0.0;
+uniform float multiplier_hor;
+uniform float multiplier_ver;
+
+void fragment() {
+    float u = offset_hor * multiplier_hor * TEXTURE_PIXEL_SIZE.x;
+	float v = offset_ver * multiplier_ver * TEXTURE_PIXEL_SIZE.x;
+    COLOR = texture(TEXTURE, vec2(UV.x + u, UV.y + v));
+}"

@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://resources/shaders/vignette.shdr.tres" type="Shader" id=1]
+[ext_resource path="res://sources/images/tech/white.png" type="Texture" id=2]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 1 )
+shader_param/vignette_intensity = 0.5
+shader_param/vignette_opacity = 0.1
+shader_param/vignette_rgb = Color( 0.552941, 0.411765, 0.478431, 1 )
+
+[node name="FuncHealthShader" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+visible = false
+material = SubResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+texture = ExtResource( 2 )
+expand = true

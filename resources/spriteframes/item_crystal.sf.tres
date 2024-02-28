@@ -1,0 +1,17 @@
+[gd_resource type="SpriteFrames" load_steps=3 format=2]
+
+[ext_resource path="res://sources/images/objects/items/crystal.png" type="Texture" id=5]
+[ext_resource path="res://sources/images/objects/items/crystal_anim.png" type="Texture" id=6]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "disappear",
+"speed": 2.0
+} ]

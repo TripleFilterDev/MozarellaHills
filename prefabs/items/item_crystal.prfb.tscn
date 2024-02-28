@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://resources/spriteframes/item_crystal.sf.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://scripts/interactive/items/ItemCrystal.cs" type="Script" id=2]
+[ext_resource path="res://sources/sounds/item_pickup.ogg" type="AudioStream" id=3]
+[ext_resource path="res://scripts/helpers/SpriteHide.cs" type="Script" id=4]
+[ext_resource path="res://sources/images/tech/item.png" type="Texture" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 5, 5 )
+
+[node name="ItemCrystal" type="Area2D"]
+collision_layer = 16
+collision_mask = 16
+script = ExtResource( 2 )
+
+[node name="AnimatedItem" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.666667, 0.666667 )
+frames = ExtResource( 1 )
+playing = true
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource( 1 )
+
+[node name="TimerMove" type="Timer" parent="."]
+
+[node name="TimerDisappear" type="Timer" parent="."]
+
+[node name="PlayerPickup" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+bus = "Sounds"
+
+[node name="Item" type="Sprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 5 )
+centered = false
+script = ExtResource( 4 )

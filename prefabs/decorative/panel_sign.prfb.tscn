@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://resources/styles/panel_sign.stl.tres" type="StyleBox" id=1]
+[ext_resource path="res://resources/dynfonts/f77_s4.dfnt.tres" type="DynamicFont" id=2]
+[ext_resource path="res://scripts/decorative/PanelSign.cs" type="Script" id=3]
+
+[node name="PanelSign" type="Panel"]
+margin_right = 64.0
+margin_bottom = 64.0
+custom_styles/panel = ExtResource( 1 )
+script = ExtResource( 3 )
+text = "Привет, привет, дружище!"
+isLocalized = false
+
+[node name="Label" type="RichTextLabel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+custom_colors/default_color = Color( 1, 0.92549, 0.839216, 1 )
+custom_fonts/normal_font = ExtResource( 2 )
+bbcode_enabled = true
+bbcode_text = "Text"
+text = "Text"
+scroll_active = false

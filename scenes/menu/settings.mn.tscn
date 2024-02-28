@@ -1,0 +1,321 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://resources/styles/panel_sign.stl.tres" type="StyleBox" id=1]
+[ext_resource path="res://resources/dynfonts/f77_s8.dfnt.tres" type="DynamicFont" id=2]
+[ext_resource path="res://resources/styles/button.tres" type="StyleBox" id=3]
+[ext_resource path="res://resources/dynfonts/f77_s10.dfnt.tres" type="DynamicFont" id=4]
+[ext_resource path="res://resources/dynfonts/f77_s14.dfnt.tres" type="DynamicFont" id=5]
+[ext_resource path="res://sources/images/map/sky.png" type="Texture" id=6]
+[ext_resource path="res://scripts/menu/MenuSettings.cs" type="Script" id=7]
+[ext_resource path="res://prefabs/menuprefabs/button_sounded.tscn" type="PackedScene" id=8]
+[ext_resource path="res://prefabs/menuprefabs/button_localized.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scripts/menu/LabelLocalized.cs" type="Script" id=10]
+
+[node name="MenuSettings" type="Node2D"]
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CanvasMenu" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ControlMenu" type="Control" parent="CanvasMenu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TextureBackground" type="TextureRect" parent="CanvasMenu/ControlMenu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ControlMusic" type="Control" parent="CanvasMenu/ControlMenu"]
+anchor_left = 0.1
+anchor_top = 0.2
+anchor_right = 0.4
+anchor_bottom = 0.4
+
+[node name="Panel" type="Panel" parent="CanvasMenu/ControlMenu/ControlMusic"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = ExtResource( 1 )
+
+[node name="LabelDesc" type="Label" parent="CanvasMenu/ControlMenu/ControlMusic"]
+anchor_left = 0.03
+anchor_top = 0.06
+anchor_right = 0.97
+anchor_bottom = 0.5
+custom_fonts/font = ExtResource( 4 )
+text = "Music"
+align = 1
+valign = 1
+clip_text = true
+script = ExtResource( 10 )
+locale = "MN_MUSIC"
+
+[node name="PanelMusic" type="Panel" parent="CanvasMenu/ControlMenu/ControlMusic"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = ExtResource( 3 )
+
+[node name="LabelMusic" type="Label" parent="CanvasMenu/ControlMenu/ControlMusic"]
+anchor_left = 0.03
+anchor_top = 0.53
+anchor_right = 0.97
+anchor_bottom = 0.97
+custom_fonts/font = ExtResource( 4 )
+text = "50%"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ButtonReduce" parent="CanvasMenu/ControlMenu/ControlMusic" instance=ExtResource( 8 )]
+anchor_top = 0.5
+anchor_right = 0.25
+anchor_bottom = 1.0
+focus_neighbour_right = NodePath("../ButtonIncrease")
+focus_neighbour_bottom = NodePath("../../ControlSounds/ButtonReduce")
+focus_mode = 2
+enabled_focus_mode = 2
+text = "-"
+
+[node name="ButtonIncrease" parent="CanvasMenu/ControlMenu/ControlMusic" instance=ExtResource( 8 )]
+anchor_left = 0.75
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_neighbour_left = NodePath("../ButtonReduce")
+focus_neighbour_right = NodePath("../../ControlFullscreen/ButtonToggle")
+focus_neighbour_bottom = NodePath("../../ControlSounds/ButtonIncrease")
+focus_mode = 2
+enabled_focus_mode = 2
+text = " +"
+
+[node name="ControlSounds" type="Control" parent="CanvasMenu/ControlMenu"]
+anchor_left = 0.1
+anchor_top = 0.45
+anchor_right = 0.4
+anchor_bottom = 0.65
+
+[node name="Panel" type="Panel" parent="CanvasMenu/ControlMenu/ControlSounds"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = ExtResource( 1 )
+
+[node name="LabelDesc" type="Label" parent="CanvasMenu/ControlMenu/ControlSounds"]
+anchor_left = 0.03
+anchor_top = 0.06
+anchor_right = 0.97
+anchor_bottom = 0.5
+custom_fonts/font = ExtResource( 4 )
+text = "Sounds"
+align = 1
+valign = 1
+clip_text = true
+script = ExtResource( 10 )
+locale = "MN_SOUNDS"
+
+[node name="PanelSounds" type="Panel" parent="CanvasMenu/ControlMenu/ControlSounds"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = ExtResource( 3 )
+
+[node name="LabelSounds" type="Label" parent="CanvasMenu/ControlMenu/ControlSounds"]
+anchor_left = 0.03
+anchor_top = 0.53
+anchor_right = 0.97
+anchor_bottom = 0.97
+custom_fonts/font = ExtResource( 4 )
+text = "50%"
+align = 1
+valign = 1
+clip_text = true
+
+[node name="ButtonReduce" parent="CanvasMenu/ControlMenu/ControlSounds" instance=ExtResource( 8 )]
+anchor_top = 0.5
+anchor_right = 0.25
+anchor_bottom = 1.0
+focus_neighbour_top = NodePath("../../ControlMusic/ButtonReduce")
+focus_neighbour_right = NodePath("../ButtonIncrease")
+focus_neighbour_bottom = NodePath("../../ControlLocalization/ButtonToggle")
+focus_mode = 2
+enabled_focus_mode = 2
+text = "-"
+
+[node name="ButtonIncrease" parent="CanvasMenu/ControlMenu/ControlSounds" instance=ExtResource( 8 )]
+anchor_left = 0.75
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_neighbour_left = NodePath("../ButtonReduce")
+focus_neighbour_top = NodePath("../../ControlMusic/ButtonIncrease")
+focus_neighbour_right = NodePath("../../ControlVSync/ButtonToggle")
+focus_neighbour_bottom = NodePath("../../ControlLocalization/ButtonToggle")
+focus_mode = 2
+enabled_focus_mode = 2
+text = " +"
+
+[node name="ControlFullscreen" type="Control" parent="CanvasMenu/ControlMenu"]
+anchor_left = 0.45
+anchor_top = 0.2
+anchor_right = 0.9
+anchor_bottom = 0.4
+
+[node name="Panel" type="Panel" parent="CanvasMenu/ControlMenu/ControlFullscreen"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = ExtResource( 1 )
+
+[node name="LabelDesc" type="Label" parent="CanvasMenu/ControlMenu/ControlFullscreen"]
+anchor_left = 0.03
+anchor_top = 0.06
+anchor_right = 0.97
+anchor_bottom = 0.5
+custom_fonts/font = ExtResource( 4 )
+text = "Fullscreen"
+align = 1
+valign = 1
+clip_text = true
+script = ExtResource( 10 )
+locale = "MN_FULLSCREEN"
+
+[node name="ButtonToggle" parent="CanvasMenu/ControlMenu/ControlFullscreen" instance=ExtResource( 8 )]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_neighbour_left = NodePath("../../ControlMusic/ButtonIncrease")
+focus_neighbour_bottom = NodePath("../../ControlVSync/ButtonToggle")
+focus_mode = 2
+enabled_focus_mode = 2
+text = "Enabled"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="ControlVSync" type="Control" parent="CanvasMenu/ControlMenu"]
+anchor_left = 0.45
+anchor_top = 0.45
+anchor_right = 0.9
+anchor_bottom = 0.65
+
+[node name="Panel" type="Panel" parent="CanvasMenu/ControlMenu/ControlVSync"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = ExtResource( 1 )
+
+[node name="LabelDesc" type="Label" parent="CanvasMenu/ControlMenu/ControlVSync"]
+anchor_left = 0.03
+anchor_top = 0.06
+anchor_right = 0.97
+anchor_bottom = 0.5
+custom_fonts/font = ExtResource( 4 )
+text = "V-Sync"
+align = 1
+valign = 1
+clip_text = true
+script = ExtResource( 10 )
+locale = "MN_VSYNC"
+
+[node name="ButtonToggle" parent="CanvasMenu/ControlMenu/ControlVSync" instance=ExtResource( 8 )]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_neighbour_left = NodePath("../../ControlSounds/ButtonIncrease")
+focus_neighbour_top = NodePath("../../ControlFullscreen/ButtonToggle")
+focus_neighbour_bottom = NodePath("../../ButtonReturn")
+focus_mode = 2
+enabled_focus_mode = 2
+text = "Enabled"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="ControlLocalization" type="Control" parent="CanvasMenu/ControlMenu"]
+anchor_left = 0.1
+anchor_top = 0.7
+anchor_right = 0.4
+anchor_bottom = 0.9
+
+[node name="Panel" type="Panel" parent="CanvasMenu/ControlMenu/ControlLocalization"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = ExtResource( 1 )
+
+[node name="LabelDesc" type="Label" parent="CanvasMenu/ControlMenu/ControlLocalization"]
+anchor_left = 0.03
+anchor_top = 0.06
+anchor_right = 0.97
+anchor_bottom = 0.5
+custom_fonts/font = ExtResource( 4 )
+text = "Language"
+align = 1
+valign = 1
+clip_text = true
+script = ExtResource( 10 )
+locale = "MN_LANGUAGE"
+
+[node name="ButtonToggle" parent="CanvasMenu/ControlMenu/ControlLocalization" instance=ExtResource( 8 )]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 1.0
+focus_neighbour_top = NodePath("../../ControlSounds/ButtonIncrease")
+focus_neighbour_right = NodePath("../../ButtonReturn")
+focus_mode = 2
+enabled_focus_mode = 2
+text = "Enabled"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="ButtonReturn" parent="CanvasMenu/ControlMenu" instance=ExtResource( 9 )]
+anchor_left = 0.6
+anchor_top = 0.8
+anchor_right = 0.9
+anchor_bottom = 0.9
+focus_neighbour_left = NodePath("../ControlLocalization/ButtonToggle")
+focus_neighbour_top = NodePath("../ControlVSync/ButtonToggle")
+text = "Return"
+__meta__ = {
+"_editor_description_": ""
+}
+locale = "MN_RETURN"
+
+[node name="LabelLost" type="Label" parent="CanvasMenu/ControlMenu"]
+anchor_left = 0.55
+anchor_top = 0.65
+anchor_right = 0.95
+anchor_bottom = 0.8
+custom_colors/font_color = Color( 0.815686, 0.505882, 0.34902, 1 )
+custom_fonts/font = ExtResource( 2 )
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+script = ExtResource( 10 )
+locale = "MN_LOSTSETTINGS"
+
+[node name="PanelName" type="Panel" parent="CanvasMenu/ControlMenu"]
+anchor_left = 0.1
+anchor_top = 0.05
+anchor_right = 0.9
+anchor_bottom = 0.15
+custom_styles/panel = ExtResource( 3 )
+
+[node name="LabelName" type="Label" parent="CanvasMenu/ControlMenu/PanelName"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 5 )
+text = "Settings"
+align = 1
+valign = 1
+script = ExtResource( 10 )
+locale = "MN_SETTINGS"

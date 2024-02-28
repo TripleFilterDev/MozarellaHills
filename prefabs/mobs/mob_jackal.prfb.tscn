@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://resources/spriteframes/jackal.sf.tres" type="SpriteFrames" id=1]
+[ext_resource path="res://scripts/mobs/MobJackal.cs" type="Script" id=2]
+[ext_resource path="res://scripts/helpers/SpriteHide.cs" type="Script" id=3]
+[ext_resource path="res://sources/images/tech/mob.png" type="Texture" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 13, 6.5 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 120, 96 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 13, 1.5 )
+
+[node name="MobJackal" type="KinematicBody2D"]
+collision_layer = 128
+collision_mask = 0
+script = ExtResource( 2 )
+
+[node name="AnimatedJackal" type="AnimatedSprite" parent="."]
+frames = ExtResource( 1 )
+frame = 1
+playing = true
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 0, 9.5 )
+shape = SubResource( 1 )
+one_way_collision = true
+
+[node name="AreaCheck" type="Area2D" parent="."]
+collision_layer = 80
+collision_mask = 80
+
+[node name="Collision" type="CollisionShape2D" parent="AreaCheck"]
+visible = false
+position = Vector2( 0, 88 )
+shape = SubResource( 2 )
+
+[node name="AreaKill" type="Area2D" parent="."]
+collision_layer = 32
+collision_mask = 32
+
+[node name="Collision" type="CollisionShape2D" parent="AreaKill"]
+visible = false
+position = Vector2( 0, 2.5 )
+shape = SubResource( 3 )
+
+[node name="RayCharacter" type="RayCast2D" parent="."]
+cast_to = Vector2( 0, 0 )
+collision_mask = 16
+
+[node name="Object" type="Sprite" parent="."]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+centered = false
+script = ExtResource( 3 )

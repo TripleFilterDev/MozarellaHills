@@ -1,0 +1,253 @@
+	ru	en
+MN_PLAY	Играть	Play
+MN_SETTINGS	Настройки	Settings
+MN_CREDITS	Другое	Credits
+MN_QUIT	Выйти	Quit
+MN_RETURN	Вернуться	Return
+MN_FULLSCREEN	Полн. экран	Fullscreen
+MN_VSYNC	Вер. синхр.	V-Sync
+MN_SOUNDS	Гр. звуков	Sounds Vol.
+MN_LANGUAGE	Язык	Language
+MN_MUSIC	Гр. музыки	Music Vol.
+MN_ENABLED	Включено	Enabled
+MN_DISABLED	Выключено	Disabled
+MN_LOSTGAME	Игра не сохраняет ваш прогресс	The game is not saving your progress
+MN_LOSTSETTINGS	Игра не сохраняет настройки при перезапуске	Game doesn't save settings on restart
+LO_ENGLISH	Английский	English
+LO_RUSSIAN	Русский	Russian
+PS_TOSAVE	Перезапустить	Restart
+PS_CONTINUE	Продолжить	Continue
+PS_EXIT	Выйти	Quit
+AL_CANTGO	Галотир не может покинуть это место сейчас	Galothir cannot leave this place now
+AL_SAVE	Игра сохранена	Game saved
+AD_SINLESS_NAME	Безгрешный	Sinless
+AD_DISCO_NAME	Дискотека	The Discotheque
+AD_KING_NAME	Разговоры по душам	Sincere Conversation
+AD_SUIT_NAME	Прикрыть торс	Cover The Torso
+AD_GHUNTER_NAME	Грифоны навсегда	Griffins Forever
+AD_SCRYSTAL_NAME	Супер-кристалл	The Super Crystal
+AD_SINLESS_DESC	Не убейте никого до конца игры	Don't kill anyone until the end of the game
+AD_DISCO_DESC	Посетите местную дискотеку	Visit a local disco
+AD_KING_DESC	Поговорите с королём	Talk to the king
+AD_SUIT_DESC	Найдите верхнюю одежду	Find outerwear
+AD_GHUNTER_DESC	Поговорите с охотником на грифонов	Talk to the griffin hunter
+AD_SCRYSTAL_DESC	Найдите секретный супер-кристалл	Find the secret super crystal
+TI_ADVANCEMENTS	Достижения	Advancements
+TI_DEVELOPERS	Разработчики	Developers
+TI_IDEA	Идея: Денис Луценко	Idea: Denis Lutsenko
+TI_CODE	Код: TripleFilterDev	Code: TripleFilterDev
+TI_ARTWORK	Арт: Денис Луценко	Artwork: Denis Lutsenko
+TI_MUSIC	Музыка: TripleFilterDev	Music: TripleFilterDev
+TI_GAMEDESIGN	Геймдизайн: Денис Луценко	Game Design: Denis Lutsenko
+TI_NARRATION	Повествование: TripleFilterDev	Narration: TripleFilterDev
+TI_SPECTHANKS	Благодарность	Special Thanks
+TI_SPECTHANKSDESC	Тестирование: Bleasdale, ZaharOS, Wismm, mejnav	Tested by Bleasdale, ZaharOS, Wismm, mejnav
+IN_CREDITS	Игра создана Денисом Луценко и TripleFilterDev (Шевченко Никита). % Год выпуска - 2023. Версия - 1.00. % Переведена на английский и русский языки. % % Социальные сети: % % Денис Луценко, E-Mail: den.lutsenko.89@mail.ru % TripleFilterDev, E-Mail: triplefilterdev@gmail.com % Денис Луценко, Twitter: https://twitter.com/lutsenko_den % TripleFilterDev, Telegram: https://t.me/triplefilterdev % Home Studios, VK: https://vk.com/home_studios % % Тестировал Bleasdale. % % Сделано на Godot Engine. % % Большинство звуков сгенерировано с помощью Bfxr. % %  Используется шрифт F77 Minecraft by Se7enty-Se7en. Лицензия CC BY-ND 3.0.% %  Используется палитра Slso8 от Luis Miguel Maldonado. %	The game was created by Denis Lutsenko and TripleFilterDev (Nikita Shevchenko).% Year of release - 2023. Version - 1.00.% Translated into English and Russian.% % Contact us:% % Denis Lutsenko, E-Mail: den.lutsenko.89@mail.ru % TripleFilterDev, E-Mail: triplefilterdev@gmail.com % Denis Lutsenko, Twitter: https://twitter.com/lutsenko_den % TripleFilterDev, Telegram: https://t.me/triplefilterdev % Home Studios, VK: https://vk.com/home_studios % % Tested by Bleasdale.% % Made with Godot Engine.% % Most of the sounds are generated with Bfxr.% % The font used is F77 Minecraft by Se7enty-Se7en. License CC BY-ND 3.0.% % The Slso8 palette by Luis Miguel Maldonado is used.%
+HL_0	И вновь я здесь. Кажется, здесь можно было как-то перемещаться... Например, использовать левый джойстик и стрелочки для управления своим бренным телом... И да, надо не забывать нести валун у меня в руках. Похоже, без него я никуда не смогу уйти.	And here I am again. It seems like there should be a way to move around here... For example, using left joystick, and D-Pad to control my mundane body... And yes, I shouldn't forget to carry the boulder in my hands. It seems like I won't be able to go anywhere without it.
+HL_1	Эти булыжники мне до боли знакомы. Да, точно, их же можно перемещать! Можно ненадолго выпустить валун из своих рук и подбирать другие выделенные объекты, используя B или Y. Удивительно!	These boulders are painfully familiar to me. Yes, exactly, they can be moved! I can briefly release the boulder from my hands and pick up other highlighted objects using B or Y. How amazing!
+HL_2	Кусты снизу выглядят опасно. Логические связи в моей голове подсказывают, что можно попробовать сделать мост из булыжников, чтобы перебраться с камнем на другую сторону. Что же, приступим.	The bushes below look dangerous. Logical connections in my mind suggest that I can try to build a bridge using the boulders to cross to the other side. Well then, let's get started.
+HL_3	Никогда не забуду, что можно прыгать в два раза выше! Похоже, это у меня в крови.	I will never forget that you can jump twice as high! This seems to be my talent.
+HL_4	Сыр выглядит заманчиво. И не только для меня. А какой запах! В любом случае я всегда могу его бросить, используя A. Но, мне кажется, не стоит этого делать без необходимости.	The cheese looks tempting. And not just for me. And the smell! Anyway, I can always throw it using A. But I feel like it's best not to do it unless necessary.
+HL_5	Когда я вижу сыролюдей, во мне просыпается ярость. Я хочу их убивать, выкашивать целыми поселениями. Надо как можно быстрее найти то, чем их можно раздавить.	When I see the cheese people, rage awakens within me. I want to kill them, decimate their entire settlements. I need to find something to crush them as quickly as possible.
+HL_6	Милые собачки! Но я хочу их убить. Надо приманить их сыром и яростно раздавить булыжником. Без вариантов.	Cute little dogs! But I want to kill them. I need to lure them with cheese and mercilessly crush them with a boulder. No other options.
+HL_7	Говорят, лишь около неба находится всё самое ценное. Когда-нибудь я это проверю.	They say that only near the sky lies everything valuable. Someday I will test that.
+HL_8	Голоса в голове говорят, что я могу прыгать и в два раза выше! Если ничего не буду нести, конечно. Странным образом то, что я несу в руках, влияет и на высоту прыжка.	The voices in my head say that I can jump twice as high! If I don't carry anything, of course. Strangely enough, what I hold in my hands affects the height of my jump.
+CH_MAIN	Галотир	Galotir
+CH_CASUAL	Секьюрити	Security Guard
+CH_GOD	Ты	You
+CH_HUNTER	Охотник	Hunter
+CH_TRADER	Торгаш	Trader
+CH_SON	Сын	Son
+CH_GIRLFRIEND	Мадлина	Madlina
+CH_KING	Король	King
+DL_0_0	О, я тебя давно ждал!	Oh, I've been waiting for you for a long time!
+DL_0_1	Меня?	Me?
+DL_0_2	Да, ты же Великий Носильщик Камня.	Yes, you're the Great Stone Carrier.
+DL_0_3	Это моя работа или что-то типо того?	Is this my job or something like that?
+DL_0_4	Нет, не думаю. Это скорее... твоё хобби... или призвание?	No, I don't think so. It's more like... your hobby... or calling?
+DL_0_5	И много я таких камней перетаскал?	Have I carried many stones like that?
+DL_0_6	В жизни - да. А сейчас это твой последний раз.	In life - yes. But now it's your last time.
+DL_0_7	Почему?	Why?
+DL_0_8	Ты больше не сможешь таскать камни, я думаю. Ты устал.	I think you won't be able to carry stones anymore. You're tired.
+DL_0_9	Но я не чувствую, что я устал.	But I don't feel tired.
+DL_0_10	Однако, ты устал. Ты таскаешь камни всю свою жизнь.	However, you are tired. You've been carrying stones your whole life.
+DL_0_11	Ты таскаешь камни раз за разом, и всё ждёшь чего-то иного.	You carry stones time after time, still waiting for something else.
+DL_0_12	Но ничего на этот раз также не произойдёт. Или произойдёт.	But nothing will happen this time either. Or maybe it will.
+DL_0_13	Если честно, я не знаю.	Honestly, I don't know.
+DL_0_14	А кто знает?	Who knows then?
+DL_0_15	Ты знаешь. Ты же делал это много раз. Десятки камней.	You know. You've done it many times. Dozens of stones.
+DL_0_16	По одному и тому же пути.	Along the same path.
+DL_0_17	Правда раньше ты не встречал меня.	Though you haven't met me before.
+DL_0_18	А кто ты?	Who are you then?
+DL_0_19	Боюсь, я твоё сознание. Я должен каждый раз заставлять тебя таскать камни.	I'm afraid I'm your consciousness. I have to make you carry the stones every time.
+DL_0_20	Должно быть, это нелёгкая работа.	It must be a tough job.
+DL_0_21	Я занимаюсь этим бесплатно. Это не работа. Это также моё призвание.	I do it for free. It's not a job. It's also my calling.
+DL_0_22	В общем, мы ещё будем встречаться.	Anyway, we'll meet again.
+DL_0_23	Пожалуйста, давай не как в прошлые разы. Не заставляй меня снова делать выбор.	Please, let's not be like in the past. Don't make me make the choice again.
+DL_0_24	А какой выбор ты делал раньше?	What choice did you make before?
+DL_0_25	Заставлял таскать тебя камни...	I made you carry the stones...
+DL_1_0	Скоро ты встретишь её.	Soon you will meet her.
+DL_1_1	А потом всё. Твой судный час.	And then everything will end. Your judgment day.
+DL_1_2	А что будет?	What will happen?
+DL_1_3	Наверное, я решу твою судьбу.	I will probably decide your fate.
+DL_1_4	Если ты сам не возьмёшь себя в руки.	If you don't take control of yourself.
+DL_1_5	А практика показала что не возьмёшь.	And practice has shown that you won't.
+DL_1_6	И что мне делать?	What should I do then?
+DL_1_7	Раз за разом пытаться таскать камень, наверное.	Keep trying to carry the stone time after time, I suppose.
+DL_1_8	А если я не хочу?	But what if I don't want to?
+DL_1_9	Ты был создан, чтобы таскать камни.	You were created to carry the stones.
+DL_1_10	Камни могут выйти из твоей жизни, но ты всё ещё будешь к ним привязан.	The stones may exit your life, but you will still be attached to them.
+DL_1_11	Если честно, мне всё равно.	Honestly, I don't care.
+DL_1_12	Ну раз всё равно. Что же, делай что делаешь.	Well, if you don't care. Then do what you do.
+DL_2_0	Добрый день!	Good day!
+DL_2_1	Весьма добрый.	Quite a good one.
+DL_2_2	Можно мне пройти?	Can I pass through?
+DL_2_3	Мне кажется, что нет.	I don't think so.
+DL_2_4	Почему? Мне кажется, я тот, кто здесь нужен.	Why? I think I'm the one who's needed here.
+DL_2_5	О нет, я так не думаю. На тебе даже одежды нет.	Oh no, I don't think so. You don't even have any clothes on.
+DL_2_6	И что с того?	So what?
+DL_2_7	Послушай... ты отличаешься от остальных.	Listen... you stand out from the others.
+DL_2_8	А ещё на тебе нет одежды. Накинул бы на себя хоть что-то.	And you don't even have any clothes on. You should at least put something on.
+DL_2_9	А что, если мне неоткуда её взять?	What if I have nowhere to get them from?
+DL_2_10	Тогда предлагаю забыть тебе об этом месте.	Then I suggest you forget about this place.
+DL_2_11	Оно не для тебя.	It's not for you.
+DL_2_12	Понятно.	Understood.
+DL_2_13	Я пропущу тебя наверх.	I will let you through to the top.
+DL_3_0	Добрый день!	Good day!
+DL_3_1	Да-да, добрый-добрый.	Yes, yes, good-good.
+DL_3_2	Можно мне пройти?	Can I pass through?
+DL_3_3	Ну, почему бы и нет?	Well, why not?
+DL_3_4	А почему бы и да?	And why not indeed?
+DL_3_5	Почему бы и нет?	Why not?
+DL_3_6	Здесь классная музыка и клёвые танцы.	There's great music and cool dancing here.
+DL_3_7	Наверное, это не то, что я ищу в жизни.	Maybe that's not what I'm looking for in life.
+DL_3_8	Ты не можешь всю жизнь только таскать камни.	You can't spend your whole life just carrying stones.
+DL_3_9	К тому же, ты уже был здесь.	Besides, you've been here before.
+DL_3_10	Как давно?	How long ago?
+DL_3_11	Я боюсь, что не смогу внятно ответить на этот вопрос.	I'm afraid I can't give a coherent answer to that question.
+DL_3_12	Здесь нет времени. И пространства.	There's no time here. And no space.
+DL_4_0	Грифоны, грифоны...	Griffins, griffins...
+DL_4_1	Чёртовы грифоны, я ненавижу их.	Damn griffins, I hate them.
+DL_4_2	Какие грифоны?	What griffins?
+DL_4_3	Раньше я охотился на грифонов.	I used to hunt griffins.
+DL_4_4	Я заживо убивал их детей в красных испепеляющих зонах.	I would kill their offspring alive in the red scorching zones.
+DL_4_5	Я делал всё, чтобы эти ублюдки даже не рождались.	I did everything to ensure those bastards were never even born.
+DL_4_6	Что же случилось потом?	What happened next?
+DL_4_7	Их было больше. Намного больше.	There were more of them. Much more.
+DL_4_8	Они летали туда-сюда.	They flew back and forth.
+DL_4_9	И однажды я проиграл.	And one day, I lost.
+DL_4_10	Эти отродья буквально убили меня.	Those monsters literally killed me.
+DL_4_11	А потом сожрали мою плоть.	And then they devoured my flesh.
+DL_4_12	Считай, мне просто повезло, что я здесь.	I guess I was just lucky to end up here.
+DL_4_13	И сколько вы убили их?	And how many of them did you kill?
+DL_4_14	Пачки, пачки, грифонов. Некоторых я убивал, стреляя в них.	Packs, packs of griffins. I would shoot some of them.
+DL_4_15	Что насчёт количества? Сотни, наверное. Тысячи.	As for the number? Hundreds, probably. Thousands.
+DL_4_16	Эти грифоны! Я буквально был их истребителем, бомбардировщиком.	Those griffins! I was their exterminator, a bomber.
+DL_4_17	Вернуться бы в те славные дни, когда я был молод...	I wish I could go back to those glorious days when I was young...
+DL_4_18	И одет?	And dressed?
+DL_4_19	И одет.	And dressed.
+DL_5_0	Что ты здесь делаешь?	What are you doing here?
+DL_5_1	Мы тебя потеряли.	We lost you.
+DL_5_2	Кто мы?	Who are we?
+DL_5_3	Мы. Мама и я. Мы пришли сюда. За тобой.	We. Mom and I. We came here. For you.
+DL_5_4	Зачем? Мне и одному здесь неплохо.	Why? I'm fine here alone.
+DL_5_5	Ты трудоголик. Тебе пора отдохнуть. 	You're a workaholic. It's time for you to rest.
+DL_5_6	Дотащи свой камень. А потом всё.	Carry your stone. And then it's all over.
+DL_5_7	Кончай с этим. Дотащи свой камень и всё.	Quit this. Carry your stone and that's it.
+DL_5_8	Последний камень. Всех денег не заработаешь.	The last stone. You can't earn all the money in the world.
+DL_5_9	Ну допустим. А что потом тогда мне?	Well, let's say I do it. What awaits me after that?
+DL_5_10	Тогда там буду я. И мама.	Then I'll be there. And Mom.
+DL_5_11	Я понял.	I understand.
+DL_5_12	Ничего ты не понял. Всю жизнь будешь таскать камни.	You understand nothing. You'll spend your entire life carrying stones.
+DL_5_13	Ничего не изменится.	Nothing will change.
+DL_6_0	А ты кто?	And who are you?
+DL_6_1	Я... Я эта самая	I... I'm the one.
+DL_6_2	Кто?	The one who?
+DL_6_3	Знаешь, я ожидала, что опять застану тебя за этим.	You know, I expected to find you here again.
+DL_6_4	За этим неблагодарным занятием.	Engaged in this thankless task.
+DL_6_5	Мне сказали, что таскать камни - это моё призвание.	I was told that carrying stones is my calling.
+DL_6_6	Кто?	Who told you that?
+DL_6_7	Он.	Him.
+DL_6_8	Он самый?	Him? Really?
+DL_6_9	Ты не шутишь?	You're not joking?
+DL_6_10	Да, ОН сказал, что я рождён, чтобы таскать камни.	Yes, HE said that I was born to carry stones.
+DL_6_11	В любом случае, ты должен решить.	In any case, you have to decide.
+DL_6_12	Мы или камни.	Us or the stones.
+DL_6_13	Семья или грёбаные камни.	Family or those damn stones.
+DL_6_14	Чёртовы камни. Как я их ненавижу.	Damn stones. I hate them.
+DL_6_15	Послушай, но я не могу без них.	Listen, but I can't live without them.
+DL_6_16	Похоже, камни это часть меня.	It seems like the stones are a part of me.
+DL_6_17	Иди отсюда. И не возвращайся.	Go away. And don't come back.
+DL_6_18	И про НЕГО тоже забудь.	And forget about HIM too.
+DL_6_19	Скоро всё решится.	It will all be resolved soon.
+DL_6_20	Что?	What?
+DL_6_21	Ты увидишь.	You'll see.
+DL_9_0	Что же, ты сделал свой выбор.	Well, you've made your choice.
+DL_9_1	Осознанно я его не делал.	I didn't consciously make it.
+DL_9_2	Здесь и не нужна была осознанность.	Consciousness wasn't necessary here.
+DL_9_3	Мне кажется, ты всё и сам понимаешь.	I think you understand everything yourself.
+DL_9_4	Что дальше?	What's next?
+DL_9_5	Собственно, это конец.	Well, this is the end.
+DL_9_6	Ты прошёл этот путь опять, и опять ничего не понял...	You went through this path again and still didn't understand anything...
+DL_9_7	...	...
+DL_9_8	...	...
+DL_9_9	...	...
+DL_9_10	Знаешь, мне иногда кажется, что я безнадёжен.	You know, sometimes I feel hopeless.
+DL_9_11	Так и есть.	That's true.
+DL_9_12	Я устал от себя.	I'm tired of myself.
+DL_9_13	Я себя ненавижу.	I hate myself.
+DL_9_14	Каждую секунду, пока я нёс этот камень.	Every second while carrying this stone.
+DL_9_15	Я себя ненавидел.	I hated myself.
+DL_9_16	Забудь. Всё закончилось.	Forget it. It's over.
+DL_9_17	Это была твоя последняя попытка.	This was your last attempt.
+DL_9_18	Хватит таскать камни.	Stop carrying the stones.
+DL_9_19	Пора обратно, в нормальную жизнь.	It's time to go back, to a normal life.
+DL_10_0	Неужели ты сделал это?	Did you really do it?
+DL_10_1	Ура!	Hurray!
+DL_10_2	Что?	What?
+DL_10_3	Что я сделал?	What did I do?
+DL_10_4	Будем считать, что ты победил.	Let's consider it a victory.
+DL_10_5	Но какой ценой?	But at what cost?
+DL_10_6	Пожалуй, ценой жизни.	Well, perhaps at the cost of life.
+DL_10_7	И семьи.	And family.
+DL_10_8	Угу.	Yeah.
+DL_10_9	В общем, ты победил, но хорошего конца от этого не будет.	Anyway, you won, but there won't be a happy ending from it.
+DL_10_10	Мы уходим.	We're leaving.
+DL_10_11	Навсегда.	Forever.
+DL_10_12	А что делать мне?	What should I do now?
+DL_10_13	Забудь о нас. Займись собой.	Forget about us. Take care of yourself.
+DL_10_14	Там, всё же. У тебя успех.	There, after all, you have success.
+DL_10_15	У тебя есть теперь свобода.	You have freedom now.
+DL_10_16	Но нет нас.	But not us.
+DL_10_17	Этого же ты хотел?	Is that what you wanted?
+DL_10_18	Нет, наверное.	No, probably not.
+DL_10_19	А твои действия показывают, что да.	But your actions show otherwise.
+DL_10_20	Пока.	Goodbye.
+DL_10_21	Пока.	Goodbye.
+DL_10_22	...	...
+DL_10_23	...	...
+DL_10_24	Прощай.	Farewell.
+DL_11_0	Добрый день!	Good day!
+DL_11_1	Я Знаменитый Сырный Король.	I am the Famous Cheese King.
+DL_11_2	Прошу называть меня так.	Please address me as such.
+DL_11_3	Добрый день, Знаменитый Сырный Король.	Good day, Famous Cheese King.
+DL_11_4	Чего вы желали?	What brings you here?
+DL_11_5	Я просто хожу и смотрю.	I'm just walking around and observing.
+DL_11_6	А чем вы занимаетесь?	What do you do for a living?
+DL_11_7	Я ношу камень.	I carry a stone.
+DL_11_8	Это ваша работа?	Is that your job?
+DL_11_9	Похоже на то. 	It seems so.
+DL_11_10	По крайней мере, я никуда без этого камня уйти не могу.	At least, I can't go anywhere without this stone.
+DL_11_11	Это почётная работа!	It's an honorable job!
+DL_11_12	Давно не видел таких отчаянных людей.	Haven't seen such determined individuals in a while.
+DL_11_13	Ты достоин награды.	You deserve a reward.
+DL_11_14	Мне кажется, что нет.	I don't think so.
+DL_11_15	Позвольте, но мы с вами виделись уже много раз.	Allow me, but we've met many times before.
+DL_11_16	И вы все равно продолжаете нести эту ношу.	And yet, you continue to bear this burden.
+DL_11_17	Вот вам корона.	Here's a crown for you.
+DL_11_18	Конечно же, это ненастоящая.	Of course, it's not real.
+DL_11_19	Просто копия.	Just a replica.
+DL_11_20	Люблю копии.	I love replicas.
+DL_11_21	Иногда в копиях больше смысла, чем в оригинале.	Sometimes replicas hold more meaning than the original.
+DL_11_22	Иногда в копиях виртуальности больше смысла, чем в реальности.	Sometimes the virtuality of replicas holds more meaning than reality.
+DL_11_23	Просто удивительно!	Simply marvelous!

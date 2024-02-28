@@ -1,0 +1,24 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=2]
+
+[ext_resource path="res://sources/images/mobs/cheeseguard/cheeseguard_stay1.png" type="Texture" id=1]
+[ext_resource path="res://sources/images/mobs/cheeseguard/cheeseguard_stay0.png" type="Texture" id=4]
+[ext_resource path="res://sources/images/mobs/cheeseguard/cheeseguard_run0.png" type="Texture" id=5]
+[ext_resource path="res://sources/images/mobs/cheeseguard/cheeseguard_run1.png" type="Texture" id=6]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 1.4
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "noticed",
+"speed": 8.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "run",
+"speed": 3.0
+} ]

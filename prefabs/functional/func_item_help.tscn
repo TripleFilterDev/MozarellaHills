@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://resources/styles/panel_sign.stl.tres" type="StyleBox" id=1]
+[ext_resource path="res://resources/styles/button_hover.tres" type="StyleBox" id=2]
+[ext_resource path="res://resources/styles/button.tres" type="StyleBox" id=3]
+[ext_resource path="res://resources/dynfonts/f77_s6.dfnt.tres" type="DynamicFont" id=4]
+[ext_resource path="res://scripts/menu/FuncItemHelp.cs" type="Script" id=5]
+[ext_resource path="res://resources/themes/menu.thm.tres" type="Theme" id=6]
+[ext_resource path="res://resources/dynfonts/f77_s10.dfnt.tres" type="DynamicFont" id=7]
+[ext_resource path="res://prefabs/menuprefabs/button_localized.tscn" type="PackedScene" id=8]
+
+[node name="FuncItemHelp" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="CanvasHelp" type="CanvasLayer" parent="."]
+layer = 4
+visible = false
+
+[node name="ControlHelp" type="Control" parent="CanvasHelp"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="PanelText" type="Panel" parent="CanvasHelp/ControlHelp"]
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.7
+custom_styles/panel = ExtResource( 1 )
+
+[node name="RichHelpText" type="RichTextLabel" parent="CanvasHelp/ControlHelp/PanelText"]
+anchor_left = 0.02
+anchor_top = 0.04
+anchor_right = 0.98
+anchor_bottom = 0.96
+theme = ExtResource( 6 )
+custom_fonts/normal_font = ExtResource( 7 )
+
+[node name="ButtonContinue" parent="CanvasHelp/ControlHelp" instance=ExtResource( 8 )]
+anchor_left = 0.6
+anchor_top = 0.75
+anchor_right = 0.9
+anchor_bottom = 0.85
+theme = null
+custom_fonts/font = ExtResource( 4 )
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 2 )
+custom_styles/focus = ExtResource( 2 )
+custom_styles/disabled = ExtResource( 3 )
+custom_styles/normal = ExtResource( 3 )
+text = "Close"
+clip_text = true
+__meta__ = {
+"_editor_description_": ""
+}
+locale = "PS_CONTINUE"

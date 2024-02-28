@@ -1,0 +1,129 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://sources/images/logo/menulogo.png" type="Texture" id=1]
+[ext_resource path="res://prefabs/functional/func_play_music.tscn" type="PackedScene" id=2]
+[ext_resource path="res://resources/tilesets/main_small.ts.tres" type="TileSet" id=3]
+[ext_resource path="res://resources/spriteframes/character.sf.tres" type="SpriteFrames" id=4]
+[ext_resource path="res://sources/images/objects/stone.png" type="Texture" id=5]
+[ext_resource path="res://sources/images/map/sky.png" type="Texture" id=6]
+[ext_resource path="res://sources/images/map/cloud0.png" type="Texture" id=7]
+[ext_resource path="res://scripts/menu/MenuMain.cs" type="Script" id=8]
+[ext_resource path="res://prefabs/menuprefabs/button_localized.tscn" type="PackedScene" id=9]
+
+[node name="MenuMain" type="Node2D"]
+script = ExtResource( 8 )
+
+[node name="FuncPlayMusic" parent="." instance=ExtResource( 2 )]
+track = 5
+
+[node name="CanvasMenu" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ControlMenu" type="Control" parent="CanvasMenu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TextureBackground" type="TextureRect" parent="CanvasMenu/ControlMenu"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TextureLogo" type="TextureRect" parent="CanvasMenu/ControlMenu"]
+anchor_left = 0.05
+anchor_top = -0.1
+anchor_right = 0.5
+anchor_bottom = 0.45
+texture = ExtResource( 1 )
+expand = true
+stretch_mode = 6
+
+[node name="ButtonPlay" parent="CanvasMenu/ControlMenu" instance=ExtResource( 9 )]
+anchor_left = 0.1
+anchor_top = 0.35
+anchor_right = 0.45
+anchor_bottom = 0.45
+focus_neighbour_bottom = NodePath("../ButtonSettings")
+focus_mode = 2
+enabled_focus_mode = 2
+text = "Play"
+__meta__ = {
+"_editor_description_": ""
+}
+locale = "MN_PLAY"
+
+[node name="ButtonSettings" parent="CanvasMenu/ControlMenu" instance=ExtResource( 9 )]
+anchor_left = 0.1
+anchor_top = 0.5
+anchor_right = 0.45
+anchor_bottom = 0.6
+focus_neighbour_top = NodePath("../ButtonPlay")
+focus_neighbour_bottom = NodePath("../ButtonCredits")
+focus_mode = 2
+enabled_focus_mode = 2
+text = "Settings"
+__meta__ = {
+"_editor_description_": ""
+}
+locale = "MN_SETTINGS"
+
+[node name="ButtonCredits" parent="CanvasMenu/ControlMenu" instance=ExtResource( 9 )]
+anchor_left = 0.1
+anchor_top = 0.65
+anchor_right = 0.45
+anchor_bottom = 0.75
+focus_neighbour_top = NodePath("../ButtonSettings")
+focus_neighbour_bottom = NodePath("../ButtonQuit")
+focus_mode = 2
+enabled_focus_mode = 2
+text = "Credits"
+__meta__ = {
+"_editor_description_": ""
+}
+locale = "MN_CREDITS"
+
+[node name="ButtonQuit" parent="CanvasMenu/ControlMenu" instance=ExtResource( 9 )]
+anchor_left = 0.1
+anchor_top = 0.8
+anchor_right = 0.45
+anchor_bottom = 0.9
+focus_neighbour_top = NodePath("../ButtonCredits")
+focus_mode = 2
+enabled_focus_mode = 2
+text = "Quit"
+__meta__ = {
+"_editor_description_": ""
+}
+locale = "MN_QUIT"
+
+[node name="NodeDecorative" type="Node2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="NodeDecorative"]
+position = Vector2( 216, 56 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 7 )
+
+[node name="TileMap" type="TileMap" parent="NodeDecorative"]
+scale = Vector2( 2, 2 )
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 393222, 0, 0, 393223, 0, 1, 393224, 0, 2, 458758, 0, 65536, 458759, 0, 65537, 458760, 0, 65538, 524294, 0, 65536, 524295, 0, 65537, 524296, 0, 65538, 589830, 0, 131072, 589831, 0, 131073, 589832, 0, 131074 )
+
+[node name="Cobblestone" type="Sprite" parent="NodeDecorative"]
+position = Vector2( 240, 144 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 5 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="NodeDecorative"]
+position = Vector2( 240, 160 )
+scale = Vector2( 2, 2 )
+frames = ExtResource( 4 )
+animation = "carry_stay"
+playing = true

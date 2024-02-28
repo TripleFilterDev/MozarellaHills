@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://resources/shaders/parallax.shdr.tres" type="Shader" id=1]
+[ext_resource path="res://scripts/decorative/FuncParallax.cs" type="Script" id=2]
+[ext_resource path="res://sources/images/decorative/parallax_clouds.png" type="Texture" id=3]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 1 )
+shader_param/offset_hor = 0.0
+shader_param/offset_ver = 0.0
+shader_param/multiplier_hor = null
+shader_param/multiplier_ver = null
+
+[node name="FuncParallax" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="CanvasParallax" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="TextureParallax" type="TextureRect" parent="CanvasParallax"]
+visible = false
+material = SubResource( 1 )
+anchor_right = 4.0
+anchor_bottom = 4.0
+mouse_filter = 2
+texture = ExtResource( 3 )
+expand = true

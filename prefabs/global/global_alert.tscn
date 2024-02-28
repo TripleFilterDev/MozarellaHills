@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://resources/dynfonts/f77_s14.dfnt.tres" type="DynamicFont" id=1]
+[ext_resource path="res://scripts/global/GlobalAlert.cs" type="Script" id=2]
+
+[node name="GlobalAlert" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="CanvasAlert" type="CanvasLayer" parent="."]
+layer = 4
+
+[node name="ControlAlert" type="Control" parent="CanvasAlert"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="LabelAlert" type="Label" parent="CanvasAlert/ControlAlert"]
+modulate = Color( 1, 0.909804, 0.368627, 1 )
+anchor_left = 0.1
+anchor_top = 0.7
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+custom_fonts/font = ExtResource( 1 )
+align = 1
+valign = 1
+autowrap = true
